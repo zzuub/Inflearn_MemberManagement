@@ -44,7 +44,7 @@ public class MemberRepositoryTest {
         repository.save(member2);
 
         //when
-        Member result = repository.findByName("spring1").get(); //spring2를 가져오려면 member2로 바꿔야함
+        Member result = repository.findByName("Spring1").get(); //spring2를 가져오려면 member2로 바꿔야함
 
         //then
         assertThat(result).isEqualTo(member1);
